@@ -77,6 +77,7 @@ func (r *MyDaemonsetReconciler) Reconcile(ctx context.Context, req ctrl.Request)
 							Name:  "container",
 						},
 					},
+					NodeName: n.Name,
 				},
 			}
 			//创建pod
